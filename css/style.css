@@ -13,6 +13,7 @@
     --dark-gradient: rgba(47, 48, 58, 0.4);
     --bg-shadow: rgba(47, 48, 58, 0.8);
     --footer-scl-cl: rgba(255, 255, 255, 0.1);
+    --bg-desc: rgba(33, 150, 243, 0.9);
     /* Border */
     --border-btn-cl: rgba(0, 0, 0, 0.15);
     --border-head-cl: #ECECEC;
@@ -618,6 +619,8 @@ img{
 }
 
 .gallery-item{
+    position: relative;
+
     flex-basis: calc((100% - 60px) / 3);
 
     width: 370px;
@@ -635,6 +638,33 @@ img{
 .gallery-img{
     display: block;
     max-width: 100%;
+}
+
+.gallery-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 370px;
+    height: 294px;
+
+    padding: 63px 24px;
+
+    background-color: var(--bg-desc);
+
+    opacity: 0;
+}
+
+.gallery-desc:hover{
+    opacity: 1;
+}
+
+.gallery-desc-text{
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    
+    color: var(--white-color);
 }
 
 .group-text{
