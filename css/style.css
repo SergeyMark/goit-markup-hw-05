@@ -655,7 +655,7 @@ img{
     opacity: 0;
 }
 
-.gallery-desc:hover{
+.gallery-item:hover .gallery-desc{
     opacity: 1;
 }
 
