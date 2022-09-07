@@ -540,6 +540,8 @@ img{
     line-height: 1.71;
         
     color: var(--adress-color);
+
+    transition: color 250ms var(--cubic-bz);
 }
 
 .color-white{
@@ -569,8 +571,10 @@ img{
     width: 44px;
     height: 44px;
 
-    background: var(--footer-scl-cl);
+    background-color: var(--footer-scl-cl);
     border-radius: 50%;
+
+    transition: color 250ms var(--cubic-bz);
 }
 
 /* --------------- PORTFOLIO -------------- */
