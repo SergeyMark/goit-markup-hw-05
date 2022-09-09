@@ -574,7 +574,7 @@ img{
     background-color: var(--footer-scl-cl);
     border-radius: 50%;
 
-    transition: color 250ms var(--cubic-bz);
+    transition: background-color 250ms var(--cubic-bz);
 }
 
 /* --------------- PORTFOLIO -------------- */
@@ -681,11 +681,12 @@ img{
 
     background-color: var(--bg-desc);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--cubic-bz);
 }
 
-.gallery-item:hover .gallery-desc{
+.gallery-link:hover .gallery-desc,
+.gallery-link:focus .gallery-desc{
     transform: translateY(0);
 }
 
@@ -740,6 +741,9 @@ img{
     height: 100%;
 
     background-color: var(--dark-gradient);
+
+    transition: opacity 250ms var(--cubic-bz),
+                visibility 250ms var(--cubic-bz);
 }
 
 .modal-form{
